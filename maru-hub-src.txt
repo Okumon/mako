@@ -3390,3 +3390,4 @@ Tab1:Line()
             end
         end)
     end)
+        _G.Observation = true  
