@@ -3312,6 +3312,16 @@ elseif placeId == 7449423635 then
 end
 Tab1:Line()
 
+local ObservationRange = Tab1:Label("")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                ObservationRange:Set("Observation Range Level : "..math.floor(game:GetService("Players").LocalPlayer.VisionRadius.Value))
+            end)
+        end
+    end)
+
     local ObservationVirtualUser = game:GetService('VirtualUser')
     Tab1:Toggle("Auto Farm Observation",_G.Observation,function(a)
         _G.Observation = a
@@ -3390,4 +3400,5 @@ Tab1:Line()
             end
         end)
     end)
-        _G.Observation = true  
+    
+    _G.Observation = true
