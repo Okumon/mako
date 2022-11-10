@@ -7787,7 +7787,7 @@ end)
 A:Line()
 
       
-    A:Toggle("Fast Attack 1",nil,function(value)
+    A:Toggle("Fast Attack 1",true,function(value)
         _G.FastAttack2 = value
     end)   
     
@@ -7828,7 +7828,7 @@ end)
 
     
 
-    A:Toggle("Very Fast Attack 1",true,function(value)
+    A:Toggle("Very Fast Attack 1",nil,function(value)
         getgenv().FastAttack = value
         
 local plr = game.Players.LocalPlayer
