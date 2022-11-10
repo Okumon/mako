@@ -7802,11 +7802,11 @@ spawn(function()
                     CameraShaker:Stop()
                     y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     y.activeController.timeToNextAttack = 0
-                    y.activeController.hitboxMagnitude = 9999
+                    y.activeController.hitboxMagnitude = 150000
                     y.activeController.active = false
                     y.activeController.timeToNextBlock = 0
-                    y.activeController.focusStart = 0
-                    y.activeController.increment = 4
+                    y.activeController.focusStart = 7543400000
+                    y.activeController.increment = 10000
                     y.activeController.blocking = false
                     y.activeController.attacking = false
                     y.activeController.humanoid.AutoRotate = true
@@ -7814,7 +7814,7 @@ spawn(function()
             end
         end
     end)
-end)
+end)  
 
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
